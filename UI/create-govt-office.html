@@ -15,7 +15,7 @@
 <body>
     
     <header>
-        
+    
         <nav>
             
             <div id="branding">
@@ -31,7 +31,8 @@
         </nav>
     
     </header>
-   
+
+
     <div class="">
         
     <section class="dashboard-container">
@@ -74,7 +75,7 @@
                         <ul id="menu-dashbrd-sub"><!-- get this class and hid -->
                             
                             <li id="menu-dashbrd-edit">
-                                <a href="edit-party.html">Edit Party</a>
+                                <a href="">Edit Party</a>
                             </li>
                             
                             <li id="menu-dashbrd-list">
@@ -84,29 +85,13 @@
                         </ul>
                     
                     </li>
-
+                    
                     <li>
+                    
                         <a href="#">
-                            <span>Governmentt. office</span>
-                            <span id="menu-db-fl"> > </span>
+                            <span>Create a Govt. office</span>
                         </a>
                         
-                        <ul id="menu-dashbrd-sub"><!-- get this class and hid -->
-                            
-                            <li id="menu-dashbrd-edit">
-                                <a href="create-govt-office.html">Create Govt office</a>
-                            </li>
-                            
-                            <li id="menu-dashbrd-edit">
-                                <a href="edit-govt-office.html">Edit Govt office</a>
-                            </li>
-
-                            <li id="menu-dashbrd-list">
-                                <a href="view-govt-office.html">View Govt. office</a>
-                            </li>
-                        
-                        </ul>
-                    
                     </li>
 
                 </ul>
@@ -121,33 +106,39 @@
             
                 <div class="outter-dash">
 
-                    <div class="login-wrapper-hdr">Create Party</div>
-
                     <div>
                         
                         <form class="form-right__height">
+                        
+                            <div>
 
-                            <div>
-                                <label>Political office</label>
-                                <input type="text" id="inputbx" placeholder="Political office">
-                            </div>
-                            
-                            <div>
-                                <label>Party</label>
-                                <input type="text" id="inputbx" placeholder="Create Party">
+                                <form class="form-right__height">
+        
+                                    <div class="text-form-hdr">Create Political Office</div>
+    
+                                    <div>
+                                        <select name="candidate">
+                                            <option>----  Select Type of Office  ----</option>
+                                            <option>State Government</option>
+                                            <option>Local Government</option>
+                                            <option>Federal Government</option>
+                                            <option>Legislative</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div>
+                                        <input type="text" id="inputbx" placeholder="New Political office">
+                                    </div>
+    
+                                    <button class="p-login-btn " id="btn-logn">
+                                        SUBMIT
+                                    </a></button>
+                                </form>
+                                
                             </div>
 
-                            <div>
-                                <label>Upload Logo</label>
-                                <input type="file" name="file_name" id="">
-                            </div>
-
-                            <div>
-                                <a href="" class="button btn-md">Submit</a>
-                            </div>
-                            
                         </form>
-                    
+                           
                     </div>
     
                 </div>

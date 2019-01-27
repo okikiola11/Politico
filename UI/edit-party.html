@@ -15,7 +15,7 @@
 <body>
     
     <header>
-        
+    
         <nav>
             
             <div id="branding">
@@ -31,7 +31,8 @@
         </nav>
     
     </header>
-   
+
+
     <div class="">
         
     <section class="dashboard-container">
@@ -74,7 +75,7 @@
                         <ul id="menu-dashbrd-sub"><!-- get this class and hid -->
                             
                             <li id="menu-dashbrd-edit">
-                                <a href="edit-party.html">Edit Party</a>
+                                <a href="">Edit Party</a>
                             </li>
                             
                             <li id="menu-dashbrd-list">
@@ -84,7 +85,7 @@
                         </ul>
                     
                     </li>
-
+                    
                     <li>
                         <a href="#">
                             <span>Governmentt. office</span>
@@ -121,33 +122,39 @@
             
                 <div class="outter-dash">
 
-                    <div class="login-wrapper-hdr">Create Party</div>
-
                     <div>
                         
                         <form class="form-right__height">
+                        
+                            <div>
 
-                            <div>
-                                <label>Political office</label>
-                                <input type="text" id="inputbx" placeholder="Political office">
-                            </div>
-                            
-                            <div>
-                                <label>Party</label>
-                                <input type="text" id="inputbx" placeholder="Create Party">
+                                <form class="form-right__height">
+        
+                                    <div class="text-form-hdr">Edit Political Party</div>
+    
+                                    <div>
+                                        <select name="candidate">
+                                            <option>----  Select Party  ----</option>
+                                            <option>People's Democratic Party (PDP)</option>
+                                            <option>Alliance for Demopocray (AD)</option>
+                                            <option>Action People's Congress (APC)</option>
+                                            <option>Action National People's Party (ANPP)</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div>
+                                        <input type="text" id="inputbx" placeholder="New party name">
+                                    </div>
+    
+                                    <button class="p-login-btn " id="btn-logn">
+                                        SUBMIT
+                                    </a></button>
+                                </form>
+                                
                             </div>
 
-                            <div>
-                                <label>Upload Logo</label>
-                                <input type="file" name="file_name" id="">
-                            </div>
-
-                            <div>
-                                <a href="" class="button btn-md">Submit</a>
-                            </div>
-                            
                         </form>
-                    
+                           
                     </div>
     
                 </div>

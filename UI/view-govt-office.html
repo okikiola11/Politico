@@ -1,16 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="A politico web application">
-    <meta name="keywords" content="politico web application" >
-    <meta name="author" content="Apelehin Okikiola">
-    <title>Politico:: Dashboard</title>
-    <link rel="stylesheet" href="asset/css/style.css" />
-    <link rel="stylesheet" href="asset/css/dashboard.css" />
-    <link href="https://fonts.googleapis.com/css?family=Cinzel|Rajdhani" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="A politico web application">
+        <meta name="keywords" content="politico web application" >
+        <meta name="author" content="Apelehin Okikiola">
+        <title>Politico:: Dashboard</title>
+        <link rel="stylesheet" href="asset/css/style.css" />
+        <link rel="stylesheet" href="asset/css/dashboard.css" />
+        <link href="https://fonts.googleapis.com/css?family=Cinzel|Rajdhani" rel="stylesheet">
 </head>
 <body>
     
@@ -21,7 +22,6 @@
             <div id="branding">
                 <h1> <a href="index.html"></a>Politico </a></h1>
             </div>
-
         
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -31,8 +31,8 @@
         </nav>
     
     </header>
-   
-    <div class="">
+
+    <div class="" style="position: relative;">
         
     <section class="dashboard-container">
 
@@ -50,8 +50,17 @@
                 <p class="text">Welcome Admin</p>
                 
                 <p>Administrator</p>
-                <p><a class="tooltips" href="index.html"><span>Check Profile</span></a>
-                </p>
+                
+                <ul>
+                    <li>
+                        <a class="tooltips" href="index.html"><span>Profile</span></a>
+                    </li>
+                    
+                    <!-- <li><a class="tooltips" href="">
+                        <span>Log out</span></a>
+                    </li> -->
+                </ul>
+
             </div>
 
             <div class="menu">
@@ -74,7 +83,7 @@
                         <ul id="menu-dashbrd-sub"><!-- get this class and hid -->
                             
                             <li id="menu-dashbrd-edit">
-                                <a href="edit-party.html">Edit Party</a>
+                                <a href="">Edit Party</a>
                             </li>
                             
                             <li id="menu-dashbrd-list">
@@ -84,8 +93,9 @@
                         </ul>
                     
                     </li>
-
+                    
                     <li>
+                        
                         <a href="#">
                             <span>Governmentt. office</span>
                             <span id="menu-db-fl"> > </span>
@@ -117,35 +127,64 @@
 
         <div class="left-content">
     
-            <div class="inner-content">
-            
-                <div class="outter-dash">
+            <div class="inner-content-view">
+        
+                <div class="outter-dash--width">
+                    
+                    <div class="outer-dash__list">
+                        <a href="list-party.html">List of Party</a>
+                    </div>
 
-                    <div class="login-wrapper-hdr">Create Party</div>
+                    <div class="clearfix"></div>
 
                     <div>
                         
+                        <div class="login-wrapper-hdr">Manage Political Party</div>
+ 
                         <form class="form-right__height">
 
-                            <div>
-                                <label>Political office</label>
-                                <input type="text" id="inputbx" placeholder="Political office">
-                            </div>
-                            
-                            <div>
-                                <label>Party</label>
-                                <input type="text" id="inputbx" placeholder="Create Party">
-                            </div>
+                                <table class="table">
+                                    
+                                    <thead>
+                                        <tr>
+                                            <th>Office Name</th>
+                                            <th>Category</th>
+                                        </tr>
+                                    </thead>
 
-                            <div>
-                                <label>Upload Logo</label>
-                                <input type="file" name="file_name" id="">
-                            </div>
+                                    <tbody>
+                                        <tr>
+                                            <td>House Of Representative</td>
+                                            <td>Legislature</td>
+                                        </tr>
 
-                            <div>
-                                <a href="" class="button btn-md">Submit</a>
-                            </div>
-                            
+                                        <tr>
+                                            <td>House of Assembly</td>
+                                            <td>Legislative</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Federal Government</td>
+                                            <td>President</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>State Government</td>
+                                            <td>Governor</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>Local Government</td>
+                                            <td>Chairman</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Local Government</td>
+                                            <td>Councillor</td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+    
                         </form>
                     
                     </div>
@@ -157,6 +196,7 @@
         </div>
         
     </section>
+    
 </div>
 
 <footer class="f-postn">
