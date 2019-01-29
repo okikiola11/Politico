@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="A politico web application">
+    <meta name="keywords" content="politico web application" >
+    <meta name="author" content="Apelehin Okikiola">
+    <title>Politico:: Dashboard</title>
+    <link rel="stylesheet" href="asset/css/style.css" />
+    <link rel="stylesheet" href="asset/css/dashboard.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Rajdhani" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        
+        <nav>
+            
+            <div id="branding">
+                <h1> <a href="../index.html">Politico </a></h1>
+            </div>
+
+            <ul>
+                <li><a href="petition.html">File Petition</a></li>
+                <li><a href="contest-office.html">Contest for office</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+   
+    <div class="">
+        
+    <section class="dashboard-container">
+
+        <div class="sidebar-menu">
+
+            <div class="logo">
+            
+                <a href="#" class="sidebar-icon"><span></span> </a> 
+                <a href=""> <span id="logo"><h1>Admin</h1></span></a> 
+            
+            </div>
+
+            <div class="down">	
+                
+                <p class="text">Welcome Admin</p>
+                
+                <p>Administrator</p>
+                <p><a class="tooltips" href="index.html"><span>Check Profile</span></a>
+                </p>
+            </div>
+
+            <div class="menu">
+        
+                <ul id="menu">
+                    
+                    <li id="menu-dashbrd">
+                        <a href="dashboard.html">
+                            <span> Create Political party </span> 
+                        </a>
+                    
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <span>Political Party</span>
+                            <span id="menu-db-fl"> > </span>
+                        </a>
+                        
+                        <ul id="menu-dashbrd-sub"><!-- get this class and hid -->
+                            
+                            <li id="menu-dashbrd-edit">
+                                <a href="edit-party.html">Edit Party</a>
+                            </li>
+                            
+                            <li id="menu-dashbrd-list">
+                                <a href="admin-view-party.html">View Parties</a>
+                            </li>
+                        
+                        </ul>
+                    
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>Governmentt. office</span>
+                            <span id="menu-db-fl"> > </span>
+                        </a>
+                        
+                        <ul id="menu-dashbrd-sub"><!-- get this class and hid -->
+                            
+                            <li id="menu-dashbrd-edit">
+                                <a href="create-govt-office.html">Create Govt office</a>
+                            </li>
+                            
+                            <li id="menu-dashbrd-edit">
+                                <a href="edit-govt-office.html">Edit Govt office</a>
+                            </li>
+
+                            <li id="menu-dashbrd-list">
+                                <a href="view-govt-office.html">View Govt. office</a>
+                            </li>
+                        
+                        </ul>
+                    
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="left-content">
+    
+            <div class="inner-content">
+            
+                <div class="outter-dash">
+
+                    <form class="form-right__height">
+        
+                        <div class="text-form-hdr">Create Party</div>
+
+                        <div>
+                            <label>Type of Government</label>
+                            <input type="text" id="inputbx" placeholder="Government Type">
+                        </div>
+
+                        <div>
+                            <label>Political office</label>
+                            <input type="text" id="inputbx" placeholder="Political office">
+                        </div>
+                        
+                        <div>
+                            <label>Party</label>
+                            <input type="text" id="inputbx" placeholder="Create Party">
+                        </div>
+
+                        <div>
+                            <label>Upload Logo</label>
+                            <div>
+                                <input type="file" name="file_name" id="inputbx">
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="" class="button btn-md">Submit</a>
+                        </div>
+                        
+                    </form>
+    
+                </div>
+
+            </div>
+
+        </div>
+        
+    </section>
+</div>
+
+<footer class="f-postn">
+    <div class="footer">2019 Politico System. All Rights Reserved </div>
+</footer>
+
+</body>
+</html>
