@@ -30,40 +30,52 @@
         
         </header>
 
+        <div class="banner-pettion">
+            Your petition, your action, speaking against iota <br/>
+            Fill the File Petiton form
+        </div>
+        <div class="strip"></div>
+
+
         <div class="login-container">
 
-            <div class="login-wrapper">
+            <div class="petitn-wrapper">
     
                 <form>
-                    <div class="login-wrapper-hdr">User Login</div>
-    
+                    <!-- <div class="login-wrapper-hdr">File Petition</div> -->
+
                     <div>
-                        <input type="text" placeholder="firstname" name="Email" id="inputbx" />
+                        <label for="">--- Select Candidate---</label>
+                        <select name="candidate">
+                            <option>Sanwo Olu</option>
+                            <option>Areo Okikiola</option>
+                            <option>Williams Uchemba</option>
+                            <option>Uchenna Maduwike</option>
+                        </select>
                     </div>
                     
                     <div>
-                        <input type="text" placeholder="lastname" name="Password" id="inputbx" />
-                    </div>
-    
-                    <div class="btn-span">
-                        <div>
-                            <span>Don't have an account</span>
-                        </div>
-                        
-                        <div>
-                            <a href="register.html" class="btn-xs">Signup</a>
-                        </div>
-                    </div>
-    
-                    <!-- <a href="dashboard.html" class="buttton" id="btn-logn"> -->
-                    <a href="user-dashboard.html" class="buttton" id="btn-logn">
-                        <div class="login-btn">Login</div>
-                    </a>
-                    
-                    <div class="lost-password">
-                        <a href="lost-password.html"><h5>Lost your Password</h5></a>
+                        <label for="">--- Office---</label>
+                        <select name="office-pet">
+                            <option>President</option>
+                            <option>Governor</option>
+                            <option>Senator</option>
+                            <option>House Of Reps</option>
+                            <option>House Of Assembly Member</option>
+                            <option>Local Govt. Chairman</option>
+                            <option>Councillor</option>
+                        </select>
                     </div>
 
+                    <div>
+                        <label for="">--- Write your petition---</label>
+                        <textarea class="" id="" placeholder="Write your petition">
+                        </textarea>
+                    </div>
+
+                    <a href="dashboard.html" class="buttton" id="btn-logn">
+                        <div class="p-login-btn">Submit</div>
+                    </a>
                     <!-- <div>
                         <h6><a href="index.html">Back to home</a></h6>
                     </div> -->

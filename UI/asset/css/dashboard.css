@@ -26,6 +26,10 @@ html {
 	-moz-box-shadow: 0px 0px 10px 0px rgb(58, 41, 31);
     z-index: 999;
 }
+.tooltips {
+    text-decoration: none;
+    color:#fff;
+}
 .logo {
     width: 100%;
     padding: 14px 14px;
@@ -111,9 +115,23 @@ span#logo h1 {
     visibility: visible;
     opacity: 1;
 }
+.admin-login-btn{
+    padding: 1.5rem 0rem;
+    background: #40739e;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 97%;
+    text-align: center;
+    margin: 5px;
+    border-radius: 3px;
+}
 .dashboard-container .left-content {
     float: right;
-    width: 97%;    
+    width: 95%;    
 }
 @media only screen and (max-width: 600px) {
     .sidebar-menu{
@@ -121,12 +139,10 @@ span#logo h1 {
     }
     .left-content {
         margin-left:50px;
-        width: 100px;
-        
+        width: 100px;   
     }
     
 }
-
 .btn-md {
     background: #be363a;
     width: 100%;
@@ -146,7 +162,6 @@ label, h4, h3, h4, h5, h6 {
     font-size: 16px;
     letter-spacing: 1px;
 }
-
 .table td, .table>tbody>tr>td, .table>tbody>tr>th {
     padding: 15px 0px !important;
     height: 100%;
@@ -156,6 +171,7 @@ label, h4, h3, h4, h5, h6 {
 thead {
     text-align: left;
     color: #00C6D7;
+    font-size: 1.4rem;
 }
 .table-striped > tbody > tr:nth-of-type(odd) {
     background-color: #f9f9f9;
@@ -182,10 +198,11 @@ table{
     max-width: 100%;
     border-spacing: 0;
     /* border-collapse: collapse; */
-    display: table;
+    /* display: table; */
+    background: #ffffff;
 }
 .outter-dash--width {
-    margin: 25px auto 0;
+    margin: 15px auto 0;
     margin-bottom: 2em;
     width: 80%;
 }
@@ -205,6 +222,7 @@ table{
     width: 450px;
 }
 .form-right__height > div {
+    margin-top: -15px;
     padding: 10px 0px;
 }
 .outter-dash h4 {

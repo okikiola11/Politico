@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 @import url('https://fonts.googleapis.com/css?family=Norican');
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Unicase');
 * {
@@ -25,7 +25,7 @@ header{
     background: #40739e;
     color: #ffffff;
     padding: 5px;
-    font-family: 'ZCOOL KuaiLe', cursive;
+    font-family: 'Nunito Sans', sans-serif;
     box-shadow: 0 15px 30px 0 rgba(31, 48, 146, 0.11);
     position: sticky;
     top: 0;
@@ -34,7 +34,7 @@ header{
 header nav {
     display: flex;
     align-items: center;
-    padding: 1.1rem 1.5rem;
+    padding: 0.5rem 1.5rem;
 }
 header nav ul {
     margin-left: auto;
@@ -86,6 +86,7 @@ nav ul li a:hover, nav ul li a:focus {
     background-size: cover;
     background-repeat: no-repeat;
     height: 80vh;
+    position: relative;
 }
 .banner-text span {
     text-align: center;
@@ -106,6 +107,7 @@ textarea{
     text-decoration: none;
     display: block;
     font-size: 2rem;
+    margin-left: 20px;
 }
 .btn-sm:hover {
     animation: shake 0.6s infinite;
@@ -144,18 +146,41 @@ textarea{
 @media only screen and (min-width: 320px) and (max-width: 479px){  
     .banner-text--sizing {
         position: absolute;
-        top:70%;
+        top:50%;
         left:50%;
         transform: translate(-50%,-50%);
-        
+    }
+    .btn--sizing {
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+    }
+    .btn-sm {
+        margin-left: 20px;
     }
 }/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 480px) and (max-width: 767px){
     .banner-text--sizing {
         position: absolute;
-        top:50%;
+        top:40%;
         left:50%;
         transform: translate(-50%,-50%);
+    }
+    .btn--sizing {
+        /* display: flex; */
+        /* justify-content: center;
+        align-items: center; */
+        margin-top: 25px;
+    }
+    .footer {
+        text-align: center;
+        color: #ffffff;
+        font-size: 1rem;
+        position:fixed;
+        bottom: 0;
+        width: 100%;
+        background-size: 100% 100%;
     }
 }/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px){
@@ -170,7 +195,6 @@ textarea{
         display: flex;
         justify-content:space-evenly;
         font-size: 1.4rem;
-        
     }
 }/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1999px){
@@ -185,7 +209,10 @@ textarea{
         display: flex;
         justify-content:space-evenly;
         font-size: 1.4rem;
-        
+    }
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;   
     }
 }
 .context-wrapper-ft {
@@ -223,11 +250,15 @@ textarea{
     
 }
 .footer {
-    padding: 1.5em 0em;
+    padding: 0.7em 0em;
     text-align: center;
     color: #ffffff;
     font-size: 1.5rem;
     background: #40739e;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    background-size: 100% 100%;
 }
 .login-container {
     background-repeat: no-repeat;
@@ -255,6 +286,8 @@ textarea{
 .petitn-wrapper {
     position: absolute;
     top:50%;
+    height: 100%;
+    margin-top: 20px;
     left:50%;
     transform: translate(-50%,-50%);   
 }
@@ -320,13 +353,38 @@ textarea {
 }
 .text-form-hdr {
     font-size: 3rem;
+    padding: 12px 0px;
 }
 .lost-password {
     padding-left: 6px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+}
+.btn-span {
+    display: flex;
+    justify-content: flex-end;
+    margin: 25px 0px;
+}
+.btn-span a {
+    border: 2px solid #be363a;
+    padding: 7px 10px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    font-size: 1.35rem;
+    color: #000;
     text-decoration: none;
 }
-a .login-btn,
+.btn-span a:hover {
+    background:#be363a;
+    color: #ffffff;
+    transition: background .4s;
+}
+.btn-span > div {
+    padding-left: 8px;
+}
+.btn-span span {
+    font-size: 1.2rem;    
+}
+div .login-btn,
 .p-login-btn,
 .c-login-btn {
     padding: 1.5rem 0rem;
@@ -340,7 +398,6 @@ a .login-btn,
     width: 97%;
     text-align: center;
     margin: 5px;
-    text-decoration: none !important;
     border-radius: 3px;
 }
 .c-login-btn {
@@ -353,8 +410,8 @@ a .login-btn,
 .register-container {
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    min-height:80vh;
-    margin: 20px;
+    height:100vh;
+    margin: 0px 20px 85px 0px;
     background-color: #ffffff;
     position: relative;
 }
@@ -407,6 +464,15 @@ a .login-btn,
 /* **
 USER DASHBOARD**
 ** */
+
+.flex-container  > div {
+    flex:1; 
+    padding: 20px;
+    justify-content: space-between;
+}
+.flex-container  > div > img:hover {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
 .user-flex-container {
     background-color: #dfe4ea;
     padding: 2rem;
@@ -414,7 +480,17 @@ USER DASHBOARD**
     left: 50%;
     transform: translate(-50%,-50%); */
 }
-
+.btn-vote{
+    background: #be363a;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 5px;
+}
+div > .btn-vote {
+    margin-top: 10px;
+}
 .flex-inner-ft {
     /* flex: 1; */
     text-align: center;
@@ -431,8 +507,8 @@ USER DASHBOARD**
     .center-flex {
         display: flex; 
         justify-content: center; 
-        min-height: 75vh;
-        padding: 2rem;
+        /* min-height: 75vh; 
+        padding: 2rem;*/
     }   
 }
 @media only screen and (min-width: 900px) {
@@ -466,6 +542,19 @@ USER DASHBOARD**
     padding: 2rem;
     border-bottom: 1px solid #ffffff;
 }
+.flex-view-cc ul li:hover{
+    background-color: #ffffff;
+    color: #000;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.flex-view-cc ul li a:hover{
+    color: #000;
+    font-size: 1.1rem;
+    transition: .4s color;
+}
+.flex-view-cc:hover {
+    border: none;
+}
 .flex-view-cc ul li:last-child {
     border-bottom: none;
 }
@@ -493,7 +582,6 @@ USER DASHBOARD**
 }
 .inner-sizing {
     background-color: #ffffff;
-    box-shadow: 0 5px 10px 0 rgba(255, 255, 255, 0.5);
     width: 255px;
     height: 140px;
     padding: 50px 1rem;
@@ -505,10 +593,11 @@ USER DASHBOARD**
 .inner-sizing:hover {
     animation: shake 0.6s infinite;
     color: #ffffff;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
     transition: color .4s;
     text-decoration: none;
 }
-.inner-sizing-list ul{
+/* .inner-sizing-list ul{
     margin: 0px;
     padding: 0px;
 }
@@ -519,4 +608,93 @@ USER DASHBOARD**
     text-align: center;
     padding: 10px;
     margin: 15px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#menu-u {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+#menu-u ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#menu-u ul li {
+    border-radius: 3px;
+    border-radius: 3px;
+    background-color: #100e17;
+    color: #ffffff;
+    border-bottom: #ffffff;
+    color: #ffffff;
+/* width: 240px;  */
+
+}
+#menu-u li {
+    position: relative;
+    margin: 0;
+    border-bottom: 1px solid#ffffff; 
+    background-color: #100e17;
+    padding: 0px 0px;
+    font-size: 1.25rem;
+    padding: 5px 0px;
+}
+#menu-u li ul {
+    opacity: 0;
+    height: 0px;
+}
+#menu-u li a {
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    display: block;
+    padding: 13px 20px;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    z-index: 2;
+    background-color: #100e17;
+    font-size:0.9em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    border:none;
+    background-color: #100e17;
+}
+#menu-u li a:hover {
+    color: #ffffff;
+    background-color: #100e17;
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+    border-left: 4px solid #00C6D7;
+}
+#menu-u li.active > a {
+    background-color: #2b303a;
+    color: #ffffff;
+}
+#menu-u li ul {
+    position: absolute;
+    visibility: hidden;
+    left: 100%;
+    top: -1px;
+    background-color: #2b303a;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.1s linear;
+    border-top: 1px solid rgba(69, 74, 84, 0.7);
+}
+#menu-u li:hover > ul {
+    visibility: visible;
+    opacity: 1;
 }

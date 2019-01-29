@@ -19,12 +19,11 @@
         <nav>
             
             <div id="branding">
-                <h1> <a href="index.html"></a>Politico </a></h1>
+                <h1> <a href="../index.html">Politico </a></h1>
             </div>
 
         
             <ul>
-                <li><a href="index.html">Home</a></li>
                 <li><a href="petition.html">File Petition</a></li>
                 <li><a href="contest-office.html">Contest for office</a></li>
             </ul>
@@ -61,7 +60,7 @@
                     
                     <li id="menu-dashbrd">
                         <a href="dashboard.html">
-                            <span> Create Political party </span> 
+                            <span> Create Government Office </span> 
                         </a>
                     
                     </li>
@@ -87,11 +86,28 @@
                     </li>
                     
                     <li>
-                    
+                        
                         <a href="#">
-                            <span>Create a Govt. office</span>
+                            <span>Governmentt. office</span>
+                            <span id="menu-db-fl"> > </span>
                         </a>
                         
+                        <ul id="menu-dashbrd-sub"><!-- get this class and hid -->
+                            
+                            <li id="menu-dashbrd-edit">
+                                <a href="create-govt-office.html">Create Govt office</a>
+                            </li>
+                            
+                            <li id="menu-dashbrd-edit">
+                                <a href="edit-govt-office.html">Edit Govt office</a>
+                            </li>
+
+                            <li id="menu-dashbrd-list">
+                                <a href="view-govt-office.html">View Govt. office</a>
+                            </li>
+                        
+                        </ul>
+                    
                     </li>
 
                 </ul>
@@ -109,34 +125,26 @@
                     <div>
                         
                         <form class="form-right__height">
-                        
-                            <div>
 
-                                <form class="form-right__height">
-        
-                                    <div class="text-form-hdr">Create Political Office</div>
-    
-                                    <div>
-                                        <select name="candidate">
-                                            <option>----  Select Type of Office  ----</option>
-                                            <option>State Government</option>
-                                            <option>Local Government</option>
-                                            <option>Federal Government</option>
-                                            <option>Legislative</option>
-                                        </select>
-                                    </div>
-                                    
-                                    <div>
-                                        <input type="text" id="inputbx" placeholder="New Political office">
-                                    </div>
-    
-                                    <button class="p-login-btn " id="btn-logn">
-                                        SUBMIT
-                                    </a></button>
-                                </form>
-                                
+                            <div class="text-form-hdr">Create Political Office</div>
+
+                            <div>
+                                <select name="candidate">
+                                    <option>----  Select Type of Office  ----</option>
+                                    <option>State Government</option>
+                                    <option>Local Government</option>
+                                    <option>Federal Government</option>
+                                    <option>Legislative</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <input type="text" id="inputbx" placeholder="New Political office">
                             </div>
 
+                            <button class="p-login-btn " id="btn-logn">
+                                SUBMIT
+                            </a></button>
                         </form>
                            
                     </div>
