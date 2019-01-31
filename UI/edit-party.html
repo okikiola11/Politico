@@ -19,7 +19,7 @@
         <nav>
             
             <div id="branding">
-                <h1> <a href="index.html">Politico </a></h1>
+                <h1> <a href="../index.html">Politico </a></h1>
             </div>
 
         
@@ -128,8 +128,29 @@
                             <div class="text-form-hdr">Edit Political Party</div>
 
                             <div>
-                                <select name="candidate">
-                                    <option>----  Select Party  ----</option>
+                                <label>Government Type</label>
+                                <select name="candidate" id="inputbx">
+                                    <option>Legislative</optio>
+                                    <option>Federal</option>
+                                    <option>State</option>
+                                    <option value="">Local Government</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Political office</label>
+                                <select name="candidate" id="inputbx">
+                                    <option>House of Represntative</option>
+                                    <option>House of Assemnly</option>
+                                    <option>Senate</option>
+                                    <option>President</option>
+                                    <option value="">Governor</option>
+                                    <option value="">Chairman</option>
+                                    <option value="">Councillor</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Political party</label>
+                                <select name="candidate" id="inputbx">
                                     <option>People's Democratic Party (PDP)</option>
                                     <option>Alliance for Demopocray (AD)</option>
                                     <option>Action People's Congress (APC)</option>
@@ -138,18 +159,19 @@
                             </div>
                             
                             <div>
-                                <input type="text" id="inputbx" placeholder="Create party">
+                                <label>Headquarter Address</label>
+                                <input type="text" id="inputbx" value="24, MADUKIWE STR, OFF SAPELE">
                             </div>
-
+    
                             <div>
-                                <label>Upload Logo</label>
+                                <label>Party URL</label>
                                 <div>
                                     <input type="file" name="file_name" id="inputbx">
                                 </div>
                             </div>
 
                             <div>
-                                <a href="" class="button btn-md">Submit</a>
+                                <a href="" class="button btn-md">Update</a>
                             </div>
 
                         </form>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,51 +31,34 @@
         
         </header>
 
-        <div class="banner-pettion">
-            Your petition, your action, speaking against iota <br/>
-            Fill the File Petiton form
-        </div>
         <div class="strip"></div>
 
 
         <div class="login-container">
 
             <div class="petitn-wrapper">
-    
-                <form>
-                    <!-- <div class="login-wrapper-hdr">File Petition</div> -->
+                
+                <div class="edit-logn">
+                    <a href="edit-petition.html">Edit</a>
+                </div>
 
+                <form>
+                    
                     <div>
-                        <label for="">--- Select Candidate---</label>
-                        <select name="candidate">
-                            <option>Sanwo Olu</option>
-                            <option>Areo Okikiola</option>
-                            <option>Williams Uchemba</option>
-                            <option>Uchenna Maduwike</option>
-                        </select>
+                        <label for="">--- Selected Candidate---</label>
+                        <input type="text" value="Sanwo Olu" id="inputbx">
                     </div>
                     
                     <div>
                         <label for="">--- Office---</label>
-                        <select name="office-pet">
-                            <option>President</option>
-                            <option>Governor</option>
-                            <option>Senator</option>
-                            <option>House Of Reps</option>
-                            <option>House Of Assembly Member</option>
-                            <option>Local Govt. Chairman</option>
-                            <option>Councillor</option>
-                        </select>
+                        <input type="text" value="Governor" id="inputbx">
                     </div>
 
                     <div>
-                        <label for="">--- Write your petition---</label>
-                        <textarea class="" id="" placeholder="Write your petition">
+                        <label for="">--- Your petition---</label>
+                        <textarea class="" rows="8" placeholder="">
+                            File Petition against the Senate house
                         </textarea>
-                    </div>
-
-                    <div class="p-login-btn">
-                        <a href="view-petition.html" class="buttton" id="btn-logn">Submit</a>
                     </div>
                     
                 </form>
